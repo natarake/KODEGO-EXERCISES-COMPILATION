@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="JSXmasTree.css">
+    <link rel="stylesheet" href="../../style.css">
+    <title>JS Christmas Tree</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 fw-bold">
+      <div class="container-fluid">
+        <a
+          class="logoDesign navbar-brand text-danger ps-md-3 ps-lg-5"
+          href="../../index.html"
+          >GLad<span class="text-primary">2Help.</span></a
+        >
+      </div>
+    </nav>
+    <center>
+      <div class="customContainer">
+        <button id="stopButton" onclick="stopInterval()">Stop</button>
+        <button id="startButton" onclick="startTreeInterval()">Start Tree</button>
+        <button id="startButton" onclick="startTextInterval()">Start Text</button>
+      </div>
+      <h1 id="flashText">Merry Christmas</h1>
+      <script src="JSXmasTree.js"></script>
+    </center>
+  </body>
+</html>

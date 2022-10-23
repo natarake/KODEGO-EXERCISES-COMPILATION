@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Information</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 fw-bold">
+      <div class="container-fluid">
+        <a
+          class="logoDesign navbar-brand text-danger ps-md-3 ps-lg-5"
+          href="../index.html"
+          >GLad<span class="text-primary">2Help.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto pe-md-3 pe-lg-5">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="cv.html" class="nav-link">CV</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- --------------------------contact-------------------- -->
+    <div class="row px-5 pt-5">
+      <div class="leftContact col-md-8 col-lg-5 py-3">
+        <div class="d-flex flex-column align-items-center text-light">
+          <div class="leftTop">
+            <h2 class="text-uppercase text-primary fw-bolder">
+              Services Offered
+            </h2>
+            <h5 class="text-uppercase fw-bold">Web Development</h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in
+              debitis, praesentium assumenda asperiores, quia quis ab vitae,
+              totam voluptatum beatae magnam reprehenderit. Laudantium
+              voluptatem aperiam, expedita nemo voluptatum ea ducimus. Quas,
+              laboriosam? Aspernatur magnam saepe possimus modi accusantium
+              ducimus quasi ipsa odio laboriosam. A eaque ipsa error neque sed.
+            </p>
+          </div>
+          <div class="leftTop">
+            <h5 class="text-uppercase fw-bold">Sales and Marketing</h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in
+              debitis, praesentium assumenda asperiores, quia quis ab vitae,
+              totam voluptatum beatae magnam reprehenderit. Laudantium
+              voluptatem aperiam, expedita nemo voluptatum ea ducimus. Quas,
+              laboriosam? Aspernatur magnam saepe possimus modi accusantium
+              ducimus quasi ipsa odio laboriosam. A eaque ipsa error neque sed.
+            </p>
+          </div>
+          <div class="leftTop">
+            <h5 class="text-uppercase fw-bold">Financial Planning</h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in
+              debitis, praesentium assumenda asperiores, quia quis ab vitae,
+              totam voluptatum beatae magnam reprehenderit. Laudantium
+              voluptatem aperiam, expedita nemo voluptatum ea ducimus. Quas,
+              laboriosam? Aspernatur magnam saepe possimus modi accusantium
+              ducimus quasi ipsa odio laboriosam. A eaque ipsa error neque sed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1">
+        <!-- placeholder div for responsiveness -->
+      </div>
+      <!-- -------------------------Right Side-------------------------------- -->
+      <div class="rightContact col-md-8 col-lg-6 bg-light py-5 px-4">
+        <div class="rightTop">
+          <label for="fulllName">*Name</label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Your name"
+            class="form-control mb-2"
+          />
+          <label for="organization">*Organization/Company</label>
+          <input
+            type="text"
+            id="organization"
+            placeholder="Your organization"
+            class="form-control mb-2"
+          />
+        </div>
+        <div class="rightMid">
+          <label for="email">*Email</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Your email address"
+            class="form-control mb-2"
+          />
+          <label for="projDesc">*Project Description</label>
+
+          <textarea
+            name="projectDesc"
+            id="projectDesc"
+            cols="30"
+            rows="10"
+            class="form-control mb-2"
+            placeholder="Discuss your project in detail..."
+          ></textarea>
+        </div>
+        <div class="rightBottom">
+          <label for="budget">*Budget</label>
+          <select id="budget" class="form-select mb-2">
+            <option selected disabled value="1">--Choose your budget</option>
+            <option value="2">Less than $1,000</option>
+            <option value="3">$1,000-$2,000</option>
+            <option value="4">$2,000-$5,000</option>
+            <option value="5">More than $5,000</option>
+          </select>
+          <label for="email">*Target Launch</label>
+          <br />
+          <input
+            type="text"
+            id="launch"
+            placeholder="Example: February 5, 2023"
+            class="form-control"
+          />
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto mt-3">
+          <button class="btn btn-primary btn-lg">Send Inquiry</button>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------Footer---------------------- -->
+    <br /><br /><br />
+    <footer class="border-top border-danger border-2">
+      <div class="container-fluid d-flex g-0">
+        <div class="leftContainer border-top mt-3">
+          <div class="footer-info px-3">
+            <h3 class="text-danger">
+              GLad<span class="text-primary">2Help.</span>
+            </h3>
+            <p>
+              Purok 4, Borja St., Faranal<br />
+              San Felipe, Zambales<br /><br />
+              <strong>Phone:</strong> 0917-703-6155<br />
+              <strong>Email:</strong> glenn.ladrido@gmail.com<br />
+            </p>
+            <div class="social-links d-flex mt-3">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-fluid rightContainer mt-3 border-top position-relative"
+        >
+          <div class="centerText p-3">
+            <p>
+              The layout inspiration for this project is based on
+              <a
+                class="text-decoration-none text-primary fst-italic"
+                href="https://www.youtube.com/watch?v=Ym6RYyRBPaA&t=3155s"
+                >React Portfolio tutorial using React Bricks @ Clever Programmer </a
+              >that I converted into an HTML and Bootstrap code.
+            </p>
+            <br />
+            <p>
+              The mini CV Javascript filter was achieved through the help of
+              Easy Tutorials'
+              <a
+                href="https://www.youtube.com/watch?v=0YFrGy_mzjY&t=3778s"
+                class="text-decoration-none text-primary fst-italic"
+                >How to Make a Portfolio Website Using HTML CSS JS.</a
+              >
+            </p>
+            <br />
+            <p>
+              The GRAN Turismo - KodeGo Mini Project will not be completed
+              without the help of my team mates
+              <span class="text-decoration-none text-primary fst-italic"
+                >Avel, Neil and Ram.</span
+              >
+            </p>
+            <br />
+            <p>
+              Both the FB front-end clone and Quiz game app featured in this
+              portfolio made using ReactJS are tutorial projects of Safak
+              <a
+                href="https://www.youtube.com/c/lamadev"
+                class="text-decoration-none text-primary fst-italic"
+                >@Lama Dev YouTube channel</a
+              >
+              (One of the best YouTube channels for learning ReactJS and MERN
+              stack).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="customSize text-danger text-center border-top p-2">
+        This project will not be possible without the help of Ms. Michelle of
+        KodeGo
+        <br />&copy; 2022 Glenn Ladrido - WD20P Student <br />All Rights Reserve
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      ;
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </body>
+</html>
