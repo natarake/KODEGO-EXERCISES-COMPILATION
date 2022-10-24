@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,11 +25,13 @@
     </nav>
     <center>
       <div class="customContainer">
+        <button id="startButton" onclick="startInterval()">Start</button>
         <button id="stopButton" onclick="stopInterval()">Stop</button>
-        <button id="startButton" onclick="startTreeInterval()">Start Tree</button>
-        <button id="startButton" onclick="startTextInterval()">Start Text</button>
+        <button id="resetButton" onclick="resetFlash()">Reset</button>
       </div>
+      <p id="rgbValuesText"></p>
       <h1 id="flashText">Merry Christmas</h1>
+      <p id="rgbValuesTree"></p>
       <script src="JSXmasTree.js"></script>
     </center>
   </body>
