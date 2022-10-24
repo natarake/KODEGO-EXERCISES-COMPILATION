@@ -1,7 +1,7 @@
 let height = prompt(
   "Please enter a number between 20 and 24 to make a xmasTree"
 );
-const star = " &nbsp*&nbsp ";
+const star = " |*| ";
 
 for (let i = 0; i < height; i++) {
   document.write(`<p class="xmasTree"> ${star.repeat(i + 1)} </p>`);
