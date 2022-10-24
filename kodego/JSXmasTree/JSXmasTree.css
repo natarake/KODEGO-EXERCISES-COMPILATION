@@ -45,8 +45,27 @@ h1 {
 }
 
 #rgbValuesTree {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
+
+.xmasTree {
+  font-weight: bolder;
+}
+
+#starPosition{
+  position: relative;
+}
+
+#star {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 60px;
+}
+
 button {
   padding: 5px 8px;
   border-radius: 3px;
