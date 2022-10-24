@@ -1,11 +1,17 @@
 let height = prompt(
-  "Please enter a number between 20 and 24 to make a xmasTree"
+  "Please enter a number between 16 and 20 to make a xmasTree"
 );
+let stand = height / 4;
 const star = " |*| ";
+const baseStand = "||||||||"
 
 for (let i = 0; i < height; i++) {
   document.write(`<p class="xmasTree"> ${star.repeat(i + 1)} </p>`);
 }
+for (let a = 0; a < stand; a++) { 
+  document.write(`<p class="xmasTree"> ${baseStand.repeat(a + 1)} </p>`);
+}
+
 
 const colorGenTree = () => {
   const red = Math.floor(Math.random() * 256);
@@ -38,12 +44,19 @@ const colorGenText = () => {
 
 let treeInterval = prompt("Input a number divisible by 100 for Tree Interval");
 let textInterval = prompt("Input a number divisible by 100 for Text Interval");
-function startInterval() {
+const startInterval = () => {
   startColor = setInterval(colorGenTree, `${treeInterval}`);
   startColor2 = setInterval(colorGenText, `${textInterval}`);
+  const starPosition = () => {
+    if (height >= 1) {
+      let starPos = document.getElementById('star');
+      starPos.style.top = "80px";
+    }
+  }
+  starPosition();
 }
 
-function stopInterval() {
+const stopInterval = () => {
   clearInterval(startColor);
   clearInterval(startColor2);
 }
@@ -53,6 +66,6 @@ function stopInterval() {
 //   clearInterval(startColor2);
 // }, 5000)
 
-function resetFlash() {
+const resetFlash = () => {
   window.location.reload();
 }
